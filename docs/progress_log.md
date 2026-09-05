@@ -1,2 +1,4 @@
    ## 02-09-2026
    Loaded dataset (1,552,210 rows, 40,336 patients), confirmed class imbalance (98.2% vs 1.8% sepsis). Environment, Git, and GitHub fully set up. Ready for Phase 2 (EDA) next.
+   ## 04-09-2026 
+   Completed Phase 3 (Patient-Level Aggregation). Aggregated 1.55M hourly rows into 40,336 patient-level rows (57 columns): vitals as mean/min/max, labs as last known value, static features as first value, SepsisLabel as max. Validated target distribution matches patient-level sepsis rate (2932/40336, 7.27%). Saved to data/processed/patient_level_data.csv. Ready for Phase 4 (Cleaning & Feature Engineering) next.
