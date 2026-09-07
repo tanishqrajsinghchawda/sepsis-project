@@ -12,3 +12,5 @@ Completed Phase 4 (Cleaning & Feature Engineering). Dropped 4 columns over 90% m
 
 ## 05-09-2026 (continued)
 Completed Phase 5 (Model Training & Comparison). Trained and evaluated three models on the 80/20 stratified train-test split: Logistic Regression (Recall 0.75, Precision 0.21, F1 0.33), Random Forest (Recall 0.44, Precision 0.85, F1 0.58), XGBoost (Recall 0.68, Precision 0.68, F1 0.68). Selected XGBoost as the final model for the most balanced precision/recall tradeoff and highest F1-score. Ready for Phase 6 (SHAP Explainability) next session.
+## 06-09-2026 
+Completed Phase 6 (Explainability). Generated SHAP global summary plot for XGBoost - top predictors are ICULOS_max (ICU stay length), Temp_max, HospAdmTime, WBC_last, and several lab "was tested" flags, confirming the missingness-as-signal decision from Phase 4 was useful. Generated a per-patient SHAP force plot showing individual reasoning (e.g. fever pushing risk up, normal creatinine/blood pressure pushing risk down) - this becomes the "reason" shown in the app. Ready for Phase 7 (Model Export & SQL Setup) next.
