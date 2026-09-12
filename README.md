@@ -25,7 +25,8 @@ Python, Pandas, NumPy, scikit-learn, XGBoost, SHAP, Streamlit, SQLite
 
 sepsis-project/
 - data/ — raw and processed datasets (not tracked in git)
-- notebooks/ — EDA, aggregation, cleaning, modeling, SHAP
+- notebooks/01_data_acquisition.ipynb — data loading, EDA, patient-level aggregation, cleaning & feature engineering (Phases 1-4)
+- notebooks/05_model_training.ipynb — model training & comparison, SHAP explainability, model export, app development (Phases 5-8)
 - figures/ — saved plots for the report
 - app/ — Streamlit app, trained model, database
 - docs/ — progress log, report
